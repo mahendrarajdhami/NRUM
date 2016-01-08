@@ -35,8 +35,6 @@ public class MainActivity extends Activity {
         wb.setWebViewClient(new HelloWebViewClient());
 //        wb.loadUrl("http://10.0.2.2/mahen.dev/nrum");
 //        wb.loadUrl("http://192.168.137.1/mahen.dev/nrum");
-        wb.loadUrl("http://192.168.137.1/mahen.dev/hamrobharaul");
-//        wb.loadUrl("http://10.0.2.2/YIG-MI_PROJECTS/PROJECTS-CMS/YCMS_v0.3/");
     }
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
         if( url.startsWith("http:") || url.startsWith("https:") ) {
