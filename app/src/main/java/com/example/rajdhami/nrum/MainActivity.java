@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
         wb.getSettings().setUseWideViewPort(true);
         wb.getSettings().setBuiltInZoomControls(true);
         wb.setWebViewClient(new HelloWebViewClient());
-//        wb.loadUrl("http://10.0.2.2/mahen.dev/nrum");
+        wb.loadUrl("http://10.0.2.2/mahen.dev/nrum");
 //        wb.loadUrl("http://192.168.137.1/mahen.dev/nrum");
     }
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
