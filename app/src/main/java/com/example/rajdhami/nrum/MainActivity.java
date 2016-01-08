@@ -2,7 +2,6 @@ package com.example.rajdhami.nrum;
 
 import android.net.Uri;
 import android.os.Bundle;
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
@@ -24,8 +23,6 @@ public class MainActivity extends Activity {
             return false;
         }
     }
-    /** Called when the activity is first created. */
-    @SuppressWarnings("deprecation")
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +33,10 @@ public class MainActivity extends Activity {
         wb.getSettings().setUseWideViewPort(true);
         wb.getSettings().setBuiltInZoomControls(true);
         wb.setWebViewClient(new HelloWebViewClient());
-        wb.loadUrl("http://10.0.2.2/YIG-MI_PROJECTS/PROJECTS-CMS/YCMS-Samunnat");
+//        wb.loadUrl("http://10.0.2.2/mahen.dev/nrum");
+//        wb.loadUrl("http://192.168.137.1/mahen.dev/nrum");
+        wb.loadUrl("http://192.168.137.1/mahen.dev/hamrobharaul");
+//        wb.loadUrl("http://10.0.2.2/YIG-MI_PROJECTS/PROJECTS-CMS/YCMS_v0.3/");
     }
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
         if( url.startsWith("http:") || url.startsWith("https:") ) {
